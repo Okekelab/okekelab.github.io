@@ -7,108 +7,167 @@
 	<meta name="description" content="Welcome to Okeke Lab at the University of Ibadan, Nigeria run by Iruka N Okeke. Our research covers mechanisms in bacterial 
 	pathogens, animicrobial resistance, phyllosphere, and drug discovery for neglected bacteria using genomics and molecular biology methods.">
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header id="container">
-      <div id="logo">
-        <a href="index.html">
-          <img class=logo-img src="images/ol_logo_final-nobg.png" alt="OkekeLab Logo">
-        </a>
-      </div>
-      <div class="topnav" id="myTopnav">
-        <a class="active" href="index.html">Home</a>
-		<a href="members.html">Members</a>
-		<div class="dropdown">
-		  <button class="dropbtn">Resources
-		  </button>
-		  <div class="dropdown-content">
-			<a href="resources/genomic_surveillance_support.html">Genomic Surveillance Support</a>
-			<a href="https://scholar.google.com/citations?hl=en&user=KCc3tdAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Publications</a>
-		    <a href="#">Courses</a>
-		  </div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="./index.html">
+			<img class=logo-img src="images/ol_logo_final-nobg.png" style="height:40px;" alt="OkekeLab Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./members.html">Members</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+					Resources
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="./resources/genomic_surveillance_support.html">Sequencing service</a>
+					<a class="dropdown-item" href="https://scholar.google.com/citations?hl=en&user=KCc3tdAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Publications</a>
+					<a class="dropdown-item" href="#">Courses</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./blog.html">Blog</a>
+				</li>
+			</ul>
 		</div>
-        <a href="contact.html">Contact</a>
-		<a href="blog.html">Blog</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	  </div>
-    </header>
-    <div class="breaker" style="height: 60px; background: linear-gradient(45deg, var(--color-black), var(--color-gray));"></div>
+	</nav>
+
+    
+
+	<!-- Main-->
 	
-	<div id="home-logo">
-		<img class="logo" src="images/ol_logo_final-nobg.png" alt="OkekeLab Logo">
-		<p class="about">Welcome to the website of Iruka N. Okeke and her Molecular Microbiology lab. 
-			We are located in the Department of Pharmaceutical Microbiology, Faculty of Pharmacy at the 
-			<a href="http://pgcollege.ui.edu.ng/" target="_blank">University of Ibadan</a>, 
-			Nigeria’s premier hub of interdisciplinary science.</p>
-	</div>
-	
-	<br>
-	
-	<p id="body-content">
-		We are a bacteriology- and computational genomics-oriented lab that seeks to use molecular biology and genome sequencing to understand 
-		the evolution, epidemiology, population dynamics, pathogenesis, and dissemination of diarrheal pathogens, endemic bacterial pathogens and 
-		WHO-high priority pathogens, including (but not limited to) <i>Acinetobacter</i>, <i>Klebsiella</i>, <i>Escherichia coli</i>, <i>Pseudomonas</i>, <i>Salmonella</i>, and 
-		<i>Vibrio cholerae</i>. We are particularly interested in the molecular basis of multi-drug resistance (MDR) and the reasons for the success of 
-		virulent clones in the hospital and the community. </p>
-	<p id="body-content">We endeavor to adopt a one-health approach in the study of these pathogens, and 
-		collaborate with researchers within and outside the university community to achieve this objective. We also contribute to the nation’s 
-		fight against MDR by supporting the Nigeria Centre for Disease Control via the provision of next-generation sequencing and bioinformatics 
-		services in other to meet the objectives of the Global Antimicrobial Resistance Surveillance System (GLASS). 
-	<p id="body-content">We are also interested in drug discovery and development, including drug repurposing, for the purpose of finding 
-		potential anti-adhesive therapies.
-	</p>
-	<p id="body-content">We seek to build and maintain an environment that fosters inclusiveness and integrates advances in microbiology, 
-		molecular biology, genomics, and bioinformatics. 
-	</p>
-	<br>
-	<div id="grid-wrapper">
-		<div class="topbox"><strong>Research Areas</strong></div>
-		<div class="bottombox1l"></div>
-		<div class="bottombox1r">
-			<h4 class="box-text"><strong>Enteric Pathogens</strong></h4>
-			
-			<button class="myBtn text ellipsis">
-				<span class="text-concat"><strong>Severe typhoid in Africa (SETA)</strong> is a hospital and community-based, multi-country cohort study 
-					which among others, is aimed at estimating the burden of typhoid fever and its associated sequelae in select countries in Africa 
-					(including Nigeria) with the prospect of developing new vaccines for the enteric disease. The study entails identification of 
-					febrile patients, collection and laboratory analysis of biological samples from eligible and consenting patients and follow-up 
-					of typhoid patients in their communities to monitor the progression of the disease. SETA is coordinated by the International 
-					Vaccine Institute in South Korea. SETA also conducts wash and sanitation projects to determine safety of household water in 
-					municipal Ibadan, Oyo State, Nigeria.
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<p><strong>Severe typhoid in Africa (SETA)</strong> is a hospital and community-based, multi-country cohort study 
-					which among others, is aimed at estimating the burden of typhoid fever and its associated sequelae in select countries in Africa 
-					(including Nigeria) with the prospect of developing new vaccines for the enteric disease. The study entails identification of 
-					febrile patients, collection and laboratory analysis of biological samples from eligible and consenting patients and follow-up 
-					of typhoid patients in their communities to monitor the progression of the disease. SETA is coordinated by the International 
-					Vaccine Institute in South Korea. SETA also conducts wash and sanitation projects to determine safety of household water in 
-					municipal Ibadan, Oyo State, Nigeria.
-					</p>
+	<div class="container-fluid m-0 p-0">
+		<section class="container-fluid welcome_section">
+				<img class="logo" src="images/ol_logo_final-nobg.png" alt="OkekeLab Logo">
+				<p class="m-2 p-3 text-white text-center">Welcome to the website of Iruka N. Okeke and her Molecular Microbiology lab. 
+					We are located in the Department of Pharmaceutical Microbiology, Faculty of Pharmacy at the 
+					<a href="http://pgcollege.ui.edu.ng/" target="_blank">University of Ibadan</a>, 
+					Nigeria’s premier hub of interdisciplinary science.
+				</p>
+		</section>
+
+		<section class="container my-5">
+			<h2 class="text-center my-4">About us</h2>
+			<p class="py-3">
+				We are a bacteriology- and computational genomics-oriented lab that seeks to use molecular biology and genome sequencing to understand 
+				the evolution, epidemiology, population dynamics, pathogenesis, and dissemination of diarrheal pathogens, endemic bacterial pathogens and 
+				WHO-high priority pathogens, including (but not limited to) <i>Acinetobacter</i>, <i>Klebsiella</i>, <i>Escherichia coli</i>, <i>Pseudomonas</i>, <i>Salmonella</i>, and 
+				<i>Vibrio cholerae</i>. We are particularly interested in the molecular basis of multi-drug resistance (MDR) and the reasons for the success of 
+				virulent clones in the hospital and the community. </p>
+			<p class="py-3">We endeavor to adopt a one-health approach in the study of these pathogens, and 
+				collaborate with researchers within and outside the university community to achieve this objective. We also contribute to the nation’s 
+				fight against MDR by supporting the Nigeria Centre for Disease Control via the provision of next-generation sequencing and bioinformatics 
+				services in other to meet the objectives of the Global Antimicrobial Resistance Surveillance System (GLASS). 
+			<p class="py-3">We are also interested in drug discovery and development, including drug repurposing, for the purpose of finding 
+				potential anti-adhesive therapies.
+			</p>
+			<p class="py-3">We seek to build and maintain an environment that fosters inclusiveness and integrates advances in microbiology, 
+				molecular biology, genomics, and bioinformatics. 
+			</p>
+		</section>
+		
+		<section class="container-fluid bg-light p-5">
+			<h2 class="text-center">Research areas</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 px-3 py-5">
+							<div class="card">
+								<img class="card-img-top img-fluid card_image" src="./images/bacteria.jpg" alt="Card image cap">
+								<div class="card-body">
+								<h5 class="card-title">Enteric pathogens</h5>
+								</div>
+								<div class="card-body">
+								<a href="#" class="card-link">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 px-3 py-5">
+							<div class="card">
+								<img class="card-img-top img-fluid card_image" src="./images/res_word.PNG" alt="Card image cap">
+								<div class="card-body">
+								<h5 class="card-title">Antimicrobial resistance</h5>
+								</div>
+								<div class="card-body">
+								<a href="#" class="card-link">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 px-3 py-5">
+							<div class="card">
+								<img class="card-img-top img-fluid card_image" src="./images/ife_lab.jpg" alt="Card image cap">
+								<div class="card-body">
+								<h5 class="card-title">Neglected bacteria drug discovery</h5>
+								</div>
+								<div class="card-body">
+								<a href="#" class="card-link">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 px-3 py-5">
+							<div class="card">
+								<img class="card-img-top img-fluid card_image" src="./images/lightbulb.jpg" alt="Card image cap">
+								<div class="card-body">
+								<h5 class="card-title">Science and technology studies</h5>
+								</div>
+								<div class="card-body">
+								<a href="#" class="card-link">Read more</a>
+								</div>
+							</div>
+						</div>
+						
+						
+						
 				</div>
-			</div>
-			<button class="myBtn text ellipsis">
-				<span class="text-concat"><strong>MRC DFID project:</strong> The project is funded by the UK Medical Research Council and UK Department 
-					for International Development and is credited for establishing the Molecular Microbiology facility at the Faculty of Pharmacy 
-					University of Ibadan. It was primarily set up in March 2015 and has trained many undergraduate and graduate students since 
-					inception. With the primary focus on researching pathogenic lineages of enteric bacteria in Nigeria, the project determines 
-					the contributions of specific Enteroaggregative <i>Escherichia coli</i> (EAEC) and <i>Salmonella</i> lineages to paediatric diarrhoea. It 
-					additionally identifies locally predominant <i>Salmonella</i> lineages and elucidates carriage patterns for <i>Salmonella</i> and EAEC. The 
-					UK principal investigator of the project is Professor Gordon Dougan and the African research leader is Professor Iruka Okeke. 
-					The lab has built collaborations with many institutions within and outside the University and has serves as a resource centre 
-					for identification and molecular analyses of enteric pathogens in Nigeria.
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal2" class="modal">
-				<div class="modal-content2">
-					<span class="close">&times;</span>
-					<p><strong>MRC DFID project:</strong> The project is funded by the UK Medical Research Council and UK Department 
+		</section>
+		
+		
+		
+		<div id="grid-wrapper">
+			<div class="topbox"><strong>Research Areas</strong></div>
+			<div class="bottombox1l"></div>
+			<div class="bottombox1r">
+				<h4 class="box-text"><strong>Enteric Pathogens</strong></h4>
+				
+				<button class="myBtn text ellipsis">
+					<span class="text-concat"><strong>Severe typhoid in Africa (SETA)</strong> is a hospital and community-based, multi-country cohort study 
+						which among others, is aimed at estimating the burden of typhoid fever and its associated sequelae in select countries in Africa 
+						(including Nigeria) with the prospect of developing new vaccines for the enteric disease. The study entails identification of 
+						febrile patients, collection and laboratory analysis of biological samples from eligible and consenting patients and follow-up 
+						of typhoid patients in their communities to monitor the progression of the disease. SETA is coordinated by the International 
+						Vaccine Institute in South Korea. SETA also conducts wash and sanitation projects to determine safety of household water in 
+						municipal Ibadan, Oyo State, Nigeria.
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p><strong>Severe typhoid in Africa (SETA)</strong> is a hospital and community-based, multi-country cohort study 
+						which among others, is aimed at estimating the burden of typhoid fever and its associated sequelae in select countries in Africa 
+						(including Nigeria) with the prospect of developing new vaccines for the enteric disease. The study entails identification of 
+						febrile patients, collection and laboratory analysis of biological samples from eligible and consenting patients and follow-up 
+						of typhoid patients in their communities to monitor the progression of the disease. SETA is coordinated by the International 
+						Vaccine Institute in South Korea. SETA also conducts wash and sanitation projects to determine safety of household water in 
+						municipal Ibadan, Oyo State, Nigeria.
+						</p>
+					</div>
+				</div>
+				<button class="myBtn text ellipsis">
+					<span class="text-concat"><strong>MRC DFID project:</strong> The project is funded by the UK Medical Research Council and UK Department 
 						for International Development and is credited for establishing the Molecular Microbiology facility at the Faculty of Pharmacy 
 						University of Ibadan. It was primarily set up in March 2015 and has trained many undergraduate and graduate students since 
 						inception. With the primary focus on researching pathogenic lineages of enteric bacteria in Nigeria, the project determines 
@@ -117,58 +176,52 @@
 						UK principal investigator of the project is Professor Gordon Dougan and the African research leader is Professor Iruka Okeke. 
 						The lab has built collaborations with many institutions within and outside the University and has serves as a resource centre 
 						for identification and molecular analyses of enteric pathogens in Nigeria.
-					</p>
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal2" class="modal">
+					<div class="modal-content2">
+						<span class="close">&times;</span>
+						<p><strong>MRC DFID project:</strong> The project is funded by the UK Medical Research Council and UK Department 
+							for International Development and is credited for establishing the Molecular Microbiology facility at the Faculty of Pharmacy 
+							University of Ibadan. It was primarily set up in March 2015 and has trained many undergraduate and graduate students since 
+							inception. With the primary focus on researching pathogenic lineages of enteric bacteria in Nigeria, the project determines 
+							the contributions of specific Enteroaggregative <i>Escherichia coli</i> (EAEC) and <i>Salmonella</i> lineages to paediatric diarrhoea. It 
+							additionally identifies locally predominant <i>Salmonella</i> lineages and elucidates carriage patterns for <i>Salmonella</i> and EAEC. The 
+							UK principal investigator of the project is Professor Gordon Dougan and the African research leader is Professor Iruka Okeke. 
+							The lab has built collaborations with many institutions within and outside the University and has serves as a resource centre 
+							for identification and molecular analyses of enteric pathogens in Nigeria.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bottombox2l">
-			<h4 class="box-text"><strong>Antimicrobial Resistance</strong></h4>
-			<button class="myBtn text ellipsis">
-				<span class="text-concat">Global Health Research Unit (<a href="https://ghru.pathogensurveillance.net/" target="_blank">GHRU</a>) - Genomic Surveillance for Antimicrobial Resistance (GSAR)
-					project is hosted at the Wellcome Trust Sanger Institute at Cambridge, United Kingdom and funded by the National Institute 
-					for Health Research, United Kingdom. For the active surveillance of the origin, spread, and transmission patterns of WHO 
-					high-priority multi-drug resistant (MDR) pathogens in resource-limited settings. The Institute partnered with representative 
-					sites in Africa (Nigeria), Asia (India and the Philippines), and South America (Columbia). The Nigeria Node is hosted in the 
-					Department of Pharmaceutical Microbiology, Faculty of Pharmacy, University of Ibadan, Nigeria.
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal3" class="modal">
-				<div class="modal-content3">
-					<span class="close">&times;</span>
-					<p><strong> Global Health Research Unit (<a href="https://ghru.pathogensurveillance.net/" target="_blank">GHRU</a>) - Genomic Surveillance for Antimicrobial Resistance (GSAR) </strong>
+			<div class="bottombox2l">
+				<h4 class="box-text"><strong>Antimicrobial Resistance</strong></h4>
+				<button class="myBtn text ellipsis">
+					<span class="text-concat">Global Health Research Unit (<a href="https://ghru.pathogensurveillance.net/" target="_blank">GHRU</a>) - Genomic Surveillance for Antimicrobial Resistance (GSAR)
 						project is hosted at the Wellcome Trust Sanger Institute at Cambridge, United Kingdom and funded by the National Institute 
 						for Health Research, United Kingdom. For the active surveillance of the origin, spread, and transmission patterns of WHO 
 						high-priority multi-drug resistant (MDR) pathogens in resource-limited settings. The Institute partnered with representative 
-						sites in Africa (Nigeria), Asia (India and the Philippines), and South America (Columbia). Our group at the 
-						Department of Pharmaceutical Microbiology, Faculty of Pharmacy, University of Ibadan, Nigeria is the Nigerian node. We are 
-						working closely with the <a href="https://ncdc.gov.ng/" target="_blank">Nigeria Centre for Disease Control</a> and its laboratory network to improve AMR surveillance using genomics.
-					</p>
+						sites in Africa (Nigeria), Asia (India and the Philippines), and South America (Columbia). The Nigeria Node is hosted in the 
+						Department of Pharmaceutical Microbiology, Faculty of Pharmacy, University of Ibadan, Nigeria.
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal3" class="modal">
+					<div class="modal-content3">
+						<span class="close">&times;</span>
+						<p><strong> Global Health Research Unit (<a href="https://ghru.pathogensurveillance.net/" target="_blank">GHRU</a>) - Genomic Surveillance for Antimicrobial Resistance (GSAR) </strong>
+							project is hosted at the Wellcome Trust Sanger Institute at Cambridge, United Kingdom and funded by the National Institute 
+							for Health Research, United Kingdom. For the active surveillance of the origin, spread, and transmission patterns of WHO 
+							high-priority multi-drug resistant (MDR) pathogens in resource-limited settings. The Institute partnered with representative 
+							sites in Africa (Nigeria), Asia (India and the Philippines), and South America (Columbia). Our group at the 
+							Department of Pharmaceutical Microbiology, Faculty of Pharmacy, University of Ibadan, Nigeria is the Nigerian node. We are 
+							working closely with the <a href="https://ncdc.gov.ng/" target="_blank">Nigeria Centre for Disease Control</a> and its laboratory network to improve AMR surveillance using genomics.
+						</p>
+					</div>
 				</div>
-			</div>
-			<button class="myBtn text ellipsis">
-				<span class="text-concat"><strong>SeqAfrica Genomic AMR Surveillance:</strong> This project is funded by the <a href="https://www.flemingfund.org/" target="_blank">Fleming Fund</a> and coordinated 
-					by the <a href="https://www.food.dtu.dk/english" target="_blank">National Food Institute, Technical University of Denmark</a>. 
-					Our group is one of the three reference sites for whole genome sequencing in Africa for the One Health survillance of antimicrobial 
-					resistance in Africa. Other sites include the <a href="http://www.kcri.ac.tz/" target="_blank">Kilimanjaro Medical Research Institute</a>, Moshi, Tanzania and the <a href="https://www.nicd.ac.za/" target="_blank">
-					National Institute for Communicable Diseases</a>, South Africa. The goal of this project is to tackle antimicrobial resistance by improving technical capacity in Africa for whole 
-					genome sequence-based AMR surveillance, and consequently generate relevant, high quality, and publicly available genome data.
-					We provide reference laboratory services to Nigeria's fledgling AMR surveillance system and collaborating centers in West Africa.
-					Our activities include: 
-					<ul>
-						<li>Strain ID and susceptibility verification using both automated systems and WGS</li>
-						<li>Ruling in and out outbreaks using WGS</li>
-						<li>Feedback on performance and resistance information</li>
-						<li>Bioinformatics and molecular biology wet lab training</li>
-						<li>Data Sharing</li>
-					</ul> 
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal4" class="modal">
-				<div class="modal-content4">
-					<span class="close">&times;</span>
-					<p><strong>SeqAfrica Genomic AMR Surveillance:</strong> This project is funded by the <a href="https://www.flemingfund.org/" target="_blank">Fleming Fund</a> and coordinated 
+				<button class="myBtn text ellipsis">
+					<span class="text-concat"><strong>SeqAfrica Genomic AMR Surveillance:</strong> This project is funded by the <a href="https://www.flemingfund.org/" target="_blank">Fleming Fund</a> and coordinated 
 						by the <a href="https://www.food.dtu.dk/english" target="_blank">National Food Institute, Technical University of Denmark</a>. 
 						Our group is one of the three reference sites for whole genome sequencing in Africa for the One Health survillance of antimicrobial 
 						resistance in Africa. Other sites include the <a href="http://www.kcri.ac.tz/" target="_blank">Kilimanjaro Medical Research Institute</a>, Moshi, Tanzania and the <a href="https://www.nicd.ac.za/" target="_blank">
@@ -183,62 +236,84 @@
 							<li>Bioinformatics and molecular biology wet lab training</li>
 							<li>Data Sharing</li>
 						</ul> 
-					</p>
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal4" class="modal">
+					<div class="modal-content4">
+						<span class="close">&times;</span>
+						<p><strong>SeqAfrica Genomic AMR Surveillance:</strong> This project is funded by the <a href="https://www.flemingfund.org/" target="_blank">Fleming Fund</a> and coordinated 
+							by the <a href="https://www.food.dtu.dk/english" target="_blank">National Food Institute, Technical University of Denmark</a>. 
+							Our group is one of the three reference sites for whole genome sequencing in Africa for the One Health survillance of antimicrobial 
+							resistance in Africa. Other sites include the <a href="http://www.kcri.ac.tz/" target="_blank">Kilimanjaro Medical Research Institute</a>, Moshi, Tanzania and the <a href="https://www.nicd.ac.za/" target="_blank">
+							National Institute for Communicable Diseases</a>, South Africa. The goal of this project is to tackle antimicrobial resistance by improving technical capacity in Africa for whole 
+							genome sequence-based AMR surveillance, and consequently generate relevant, high quality, and publicly available genome data.
+							We provide reference laboratory services to Nigeria's fledgling AMR surveillance system and collaborating centers in West Africa.
+							Our activities include: 
+							<ul>
+								<li>Strain ID and susceptibility verification using both automated systems and WGS</li>
+								<li>Ruling in and out outbreaks using WGS</li>
+								<li>Feedback on performance and resistance information</li>
+								<li>Bioinformatics and molecular biology wet lab training</li>
+								<li>Data Sharing</li>
+							</ul> 
+						</p>
+					</div>
 				</div>
-			</div>
-		</div>		
-		<div class="bottombox2r"></div>
-		<div class="bottombox3l"></div>
-		<div class="bottombox3r">
-			<h4 class="box-text"><strong>Neglected Bacteria Drug Discovery</strong></h4>
-			<button class="myBtn text ellipsis">
-				<span class="text-concat">The drug discovery arm of the lab was launched in 2016 with a primary focus on approaches to identify 
-					antiadhesins for therapeutic use in infantile diarrhoea. Research areas include but are not limited to high-quality molecular 
-					library screens, delineating mechanism of action of molecules using molecular tools and progressing hits to lead using Computational 
-					and Synthetic Chemistry tools. We drive our objectives in collaborations with experts from Pharmaceutical Chemistry Department of 
-					the University of Ibadan, Obafemi Awolowo University Ile-Ife and Nnamdi Azikiwe University Awka. With supports and funds from the 
-					African Academy of Sciences our research is enhanced in collaborations with a team of experts at Africa’s first integrated drug 
-					discovery and development centre (H3D) at the University of Cape Town, South Africa.
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal5" class="modal">
-				<div class="modal-content5">
-					<span class="close">&times;</span>
-					<p>The drug discovery arm of the lab was launched in 2016 with a primary focus on approaches to identify 
+			</div>		
+			<div class="bottombox2r"></div>
+			<div class="bottombox3l"></div>
+			<div class="bottombox3r">
+				<h4 class="box-text"><strong>Neglected Bacteria Drug Discovery</strong></h4>
+				<button class="myBtn text ellipsis">
+					<span class="text-concat">The drug discovery arm of the lab was launched in 2016 with a primary focus on approaches to identify 
 						antiadhesins for therapeutic use in infantile diarrhoea. Research areas include but are not limited to high-quality molecular 
 						library screens, delineating mechanism of action of molecules using molecular tools and progressing hits to lead using Computational 
 						and Synthetic Chemistry tools. We drive our objectives in collaborations with experts from Pharmaceutical Chemistry Department of 
 						the University of Ibadan, Obafemi Awolowo University Ile-Ife and Nnamdi Azikiwe University Awka. With supports and funds from the 
 						African Academy of Sciences our research is enhanced in collaborations with a team of experts at Africa’s first integrated drug 
 						discovery and development centre (H3D) at the University of Cape Town, South Africa.
-					</p>
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal5" class="modal">
+					<div class="modal-content5">
+						<span class="close">&times;</span>
+						<p>The drug discovery arm of the lab was launched in 2016 with a primary focus on approaches to identify 
+							antiadhesins for therapeutic use in infantile diarrhoea. Research areas include but are not limited to high-quality molecular 
+							library screens, delineating mechanism of action of molecules using molecular tools and progressing hits to lead using Computational 
+							and Synthetic Chemistry tools. We drive our objectives in collaborations with experts from Pharmaceutical Chemistry Department of 
+							the University of Ibadan, Obafemi Awolowo University Ile-Ife and Nnamdi Azikiwe University Awka. With supports and funds from the 
+							African Academy of Sciences our research is enhanced in collaborations with a team of experts at Africa’s first integrated drug 
+							discovery and development centre (H3D) at the University of Cape Town, South Africa.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bottombox4l">
-			<h4 class="box-text"><strong>Science and Technology Studies</strong></h4>
-			<button class="myBtn text ellipsis">
-				<span class="text-concat"> How do microbiology, molecular biology and genomic sciences get used in African settings?  
-					This is a social science, rather than a biological question that informs the practice of science on our continent.  
-					We are particularly interested in antimicrobial resistance, <a target="_blank" href="https://books.google.com.ng/books/about/Divining_Without_Seeds.html?id=m6ZX-iwg3VQC&source=kp_book_description&redir_esc=y">diagnostic development</a> 
-					as well as in <a target="_blank" href="https://global.oup.com/academic/product/genetics-9780198795360?cc=us&lang=en&">genomic</a> and drug discovery education. 
-				</span>
-			</button>
-			<!--Modal Popup-->
-			<div id="myModal6" class="modal">
-				<div class="modal-content6">
-					<span class="close">&times;</span>
-					<p>How do microbiology, molecular biology and genomic sciences get used in African settings?  
+			<div class="bottombox4l">
+				<h4 class="box-text"><strong>Science and Technology Studies</strong></h4>
+				<button class="myBtn text ellipsis">
+					<span class="text-concat"> How do microbiology, molecular biology and genomic sciences get used in African settings?  
 						This is a social science, rather than a biological question that informs the practice of science on our continent.  
 						We are particularly interested in antimicrobial resistance, <a target="_blank" href="https://books.google.com.ng/books/about/Divining_Without_Seeds.html?id=m6ZX-iwg3VQC&source=kp_book_description&redir_esc=y">diagnostic development</a> 
-						as well as in <a target="_blank" href="https://global.oup.com/academic/product/genetics-9780198795360?cc=us&lang=en&">genomic</a> and drug discovery education.
-					</p>
+						as well as in <a target="_blank" href="https://global.oup.com/academic/product/genetics-9780198795360?cc=us&lang=en&">genomic</a> and drug discovery education. 
+					</span>
+				</button>
+				<!--Modal Popup-->
+				<div id="myModal6" class="modal">
+					<div class="modal-content6">
+						<span class="close">&times;</span>
+						<p>How do microbiology, molecular biology and genomic sciences get used in African settings?  
+							This is a social science, rather than a biological question that informs the practice of science on our continent.  
+							We are particularly interested in antimicrobial resistance, <a target="_blank" href="https://books.google.com.ng/books/about/Divining_Without_Seeds.html?id=m6ZX-iwg3VQC&source=kp_book_description&redir_esc=y">diagnostic development</a> 
+							as well as in <a target="_blank" href="https://global.oup.com/academic/product/genetics-9780198795360?cc=us&lang=en&">genomic</a> and drug discovery education.
+						</p>
+					</div>
 				</div>
-			</div>
-		</div>		
-		<div class="bottombox4r"></div>	
-	</div>
+			</div>		
+			<div class="bottombox4r"></div>	
+		</div>
+	</div> <!-- End main-->
 
 	<div class="breaker" ><br></br></div>
 	<div id="footer">
