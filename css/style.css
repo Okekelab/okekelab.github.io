@@ -310,55 +310,7 @@ a {
 	line-height: 1;
 	text-align: center;
 }
-.bottombox1l { 
-	background: url("../images/aggregate_e_coli.png");
-	background-size: cover;
-	grid-column: 1 / 2; 
-	grid-row: 2 / 3;
-}
-.bottombox1r {
-	grid-column: 2/3;
-	background: #d0d2d6;
-	padding: 0 2px;
-	font-family: var(--my-font);
-}
-.bottombox2r { 
-	background-image: url("../images/res_word.PNG");
-	background-size: cover;
-	grid-column: 2 / 3; 
-	grid-row: 3 / 4;
-}
-.bottombox2l {
-	grid-column: 1/2;
-	background: #d0d2d6;
-	padding: 0 2px;
-	font-family: var(--my-font);
-}
-.bottombox3l { 
-	background-image: url("../images/crystal_violet_assay.JPG");
-	background-size: cover;
-	text-align: center;
-	grid-column: 1 / 2; 
-	grid-row: 4 / 5;
-}
-.bottombox3r {
-	grid-column: 2/3;
-	background: #d0d2d6;
-	padding: 0 2px;
-	font-family: var(--my-font);
-}
-.bottombox4r { 
-	background-image: url("../images/dna-bg-2.jpg");
-	background-size: cover;
-	grid-column: 2 / 3; 
-	grid-row: 5 / 6;
-}
-.bottombox4l {
-	grid-column: 1/2;
-	background: #d0d2d6;
-	padding: 0 2px;
-	font-family: var(--my-font);
-}
+
 #grid-wrapper div .text {
 	line-height: 1.2;
 	font-size: 14px;
@@ -366,43 +318,6 @@ a {
 	padding: 2px 2px;
 }
 
-.bottombox1r .text, .bottombox2l .text, .bottombox3r .text, .bottombox4l .text {
-	position: relative;
-	font-size: 14px;
-	font-family: var(--my-font);
-	margin: 0;
-	color: black;
-	width: auto; 
-  }
-/* max height and line height set to fit 2 divs in the space*/
-.bottombox1r .text .text-concat, .bottombox2l .text .text-concat {
-	position: relative;
-	display: inline-block;
-	word-wrap: break-word;
-	overflow: hidden;
-	max-height: 96px; /* (Number of lines you want visible) * (line-height) */
-	line-height: 16px;
-	text-align:left;
-  }
-/* max height and line height set to fit 1 div in the space*/
-.bottombox3r .text .text-concat, .bottombox4l .text .text-concat {
-	position: relative;
-	display: inline-block;
-	word-wrap: break-word;
-	overflow: hidden;
-	max-height: 176px; /* (Number of lines you want visible) * (line-height) */
-	line-height: 16px;
-	text-align:left;
-}
-  
-.bottombox1r .text.ellipsis .text-concat::after, .bottombox2l .text.ellipsis .text-concat::after, .bottombox3r .text.ellipsis .text-concat::after, .bottombox4l .text.ellipsis .text-concat::after {
-	content: "read more";
-	position: absolute;
-	right: 0px; 
-	background-color: var(--color-darkgray);
-	color: var(--color-white);
-	bottom: 0.5px;
-  }
 
   .myBtn {
 	border:none;

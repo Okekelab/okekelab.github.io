@@ -1,300 +1,396 @@
 <!DOCTYPE html>
-<!--Okeke Lab Members-->
+<!--Okeke Lab Members Page-->
 <html>
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>OkekeLab Molecular Bology Laboratory Members Page</title>
-  <meta name="description" content="Okeke Lab is located at the University of Ibadan, Nigeria and run by Iruka N Okeke. Our lab is comprised of 
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OkekeLab Molecular Biology Laboratory Members Page</title>
+	<meta name="description" content="Welcome to Okeke Lab at the University of Ibadan, Nigeria run by Iruka N Okeke. Our lab members include  
     post-doctoral researchers, PhD, masters and undergraduate students, as well as interns">
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body>
-  <header id="container">
-    <div id="logo">
-      <a href="index.html">
-        <img class=logo-img src="images/ol_logo_final-nobg.png" alt="OkekeLab Logo">
-      </a>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
-      <a href="members.html" class="active">Members</a>
-      <div class="dropdown">
-        <button class="dropbtn">Resources
-        </button>
-        <div class="dropdown-content">
-          <a href="resources/genomic_surveillance_support.html">Genomic Surveillance Support</a>
-          <a href="https://scholar.google.com/citations?hl=en&user=KCc3tdAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Publications</a>
-          <a href="#">Courses</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-      <a href="blog.html">Blog</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  </header>
-  <div class="breaker" style="height: 60px;"></div>
-	
-  <h1 id="page-title">OkekeLab Members</h1>
+	<nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+		<a class="navbar-brand" href="./index.html">
+			<img class=logo-img src="images/ol_logo_final-nobg.png" style="height:40px;" alt="OkekeLab Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./members.html">Members</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+					Resources
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="./resources/genomic_surveillance_support.html">Sequencing service</a>
+					<a class="dropdown-item" href="https://scholar.google.com/citations?hl=en&user=KCc3tdAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Publications</a>
+					<a class="dropdown-item" href="#">Courses</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./blog.html">Blog</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
+  <div class="breaker" style="height: 80px;"></div>
+	
   <div id="page-nav">
     <a href="#about-the-pi">About the PI</a>
     <a href="#staff-and-students">Staff and Students</a>
-    <a href="#">Alumni</a>
+    <a href="#alumni">Alumni</a>
   </div>
 
   <div class="breaker"><br></div>
-	<section class="w3-content w3-display-container"> 
-	  <img class="mySlides responsive_img" src="images/iruka_thomas_bassir_lecture_group_photo.JPG">
-    <img class="mySlides responsive_img" src="images/okekelab_africacdc_group_photo.JPG">
-    <img class="mySlides responsive_img" src="images/waaw2020_microreact_group_photo.JPG">
-		<img class="mySlides responsive_img" src="images/bioanalyser_training_group_photo.jpg">
-	</section>
-	<br>
-
-  <section id="about-the-pi">
-    <br><br>
-    <div id="section-title">About the PI</div>
-    <div id="member-div">
-      <div id="one-member" class="top">
-        <div class="person">
-          <img class="profile-photo" src="images/iruka_photo.jpeg" alt="Iruka's photo">
-          <div class="name">Professor Iruka N Okeke <i class="mail fa fa-envelope"> iruka.n.okeke@gmail.com</i></div>
+  <section class="container" style="min-height: fit-content">
+    <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/iruka_thomas_bassir_lecture_group_photo.JPG" alt="First slide">
         </div>
-        <div class="info">Prof. Iruka Okeke is Professor of Pharmaceutical Microbiology and a Calestous Juma Science Leadership Fellow at the University of Ibadan, Nigeria.  Her research group uses microbiology, genetic and genomic methods to investigate the mechanisms bacteria use to colonize humans, cause disease and gain drug resistance.  She also studies laboratory practice in Africa and contributes to collaborative genomic surveillance for antimicrobial resistance.  Iruka has authored several scientific articles as well as the books Divining Without Seeds:  The case for strengthening laboratory medicine in Africa (Cornell) and Genetics:  Genes, Genomes and Evolution (Oxford).  She is a Fellow of the Nigerian and African Academies of Science.</div>  
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/okekelab_africacdc_group_photo.JPG" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/waaw2020_microreact_group_photo.JPG" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/bioanalyser_training_group_photo.jpg" alt="Third slide">
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+  </section>
+  
 
-    <br>
-    <div id="twitter-feed">
-    <a class="twitter-timeline" data-lang="en" data-width="800" data-height="400" data-theme="light" href="https://twitter.com/iruka_okeke?ref_src=twsrc%5Etfw">
-      Tweets by iruka_okeke</a> 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <br>
+  <section class="container my-5 p-3" id="about-the-pi">
+    <br><br>
+    <h2 class="my-3 text-center">About the PI</h2>
+
+
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/iruka_photo.jpeg" alt="Iruka's photo"/>
+        </div>
+        <div class="main">
+          <h3 class="name">Professor Iruka N Okeke</h3>
+          <div>
+            <a href="mailto:nigeriaghru@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="https://twitter.com/iruka_okeke"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="https://www.researchgate.net/profile/Iruka-Okeke"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Prof. Iruka Okeke is Professor of Pharmaceutical Microbiology and a Calestous Juma Science Leadership Fellow at the University of Ibadan, Nigeria.  Her research group uses microbiology, genetic and genomic methods to investigate the mechanisms bacteria use to colonize humans, cause disease and gain drug resistance.  She also studies laboratory practice in Africa and contributes to collaborative genomic surveillance for antimicrobial resistance.  Iruka has authored several scientific articles as well as the books Divining Without Seeds:  The case for strengthening laboratory medicine in Africa (Cornell) and Genetics:  Genes, Genomes and Evolution (Oxford).  She is a Fellow of the Nigerian and African Academies of Science.</p>
+          </div>
+        </div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+
   </section>
 
 
   <section id="staff-and-students">
     <br><br>
-    <div id="section-title">Staff and Students</div>  
-    <div id="member-div">
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/anderson_oaikhena.jpg" alt="Anderson's photo">
-          <div class="name">Anderson Oaikhena<i class="mail fa fa-envelope"> andersonose@yahoo.co.uk</i></div>
+    <h2 class="my-3 text-center">Staff and Students</h2>  
+
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/anderson_oaikhena.jpg" alt="Anderson's photo"/>
         </div>
-        <div class="info">Anderson became part of the lab as a postgraduate student in 2015. Anderson is currently a doctoral student focusing 
-          on bacterial colonists of the phyllosphere of medicinal plants with a view to better understanding their overall contributions to the 
-          plants as well as the ecology of natural antimicrobial resistance. As a genomic surveillance scientist in the lab, he is involved in 
-          preparing libraries and sequencing bacterial isolates received from the Nigerian AMR surveillance network.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/ayorinde_afolayan.jpg" alt="Ayo's photo">
-          <div class="name">Ayorinde Afolayan <i class="mail fa fa-envelope"> afolayanayorinde@gmail.com</i></div>
+        <div class="main">
+          <h3 class="name">Anderson Oaikhena</h3>
+          <div>
+            <a href="mailto:andersonose@yahoo.co.uk"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Anderson became part of the lab as a postgraduate student in 2015. Anderson is currently a doctoral student focusing 
+              on bacterial colonists of the phyllosphere of medicinal plants with a view to better understanding their overall contributions to the 
+              plants as well as the ecology of natural antimicrobial resistance. As a genomic surveillance scientist in the lab, he is involved in 
+              preparing libraries and sequencing bacterial isolates received from the Nigerian AMR surveillance network.</p>
+          </div>
         </div>
-        <div class="info">Ayorinde Afolayan (<a href="https://orcid.org/0000-0003-1405-2365" target="_blank">ORCID</a>) holds a doctorate in Pharmaceutical Microbiology (microbial genetics) and joined the lab in 2018 as a 
-          Research Associate for the Nigerian node of the GHRU-GSAR (Global Health Research Unit for the genomic surveillance of antimicrobial 
-          resistance) project. Currently, he is a post-doctoral scientist on the aforementioned project and he is tasked with the in silico analysis 
-          and interpretation of sequence data derived from WHO-high priority pathogens, for the active surveillance of antimicrobial resistance in 
-          Nigeria. He is particularly interested in microbiome studies, bacterial genomics, and antimicrobial resistance.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/bisi_akinlabi.JPG" alt="Bisi's photo">
-          <div class="name">Bisi Akinlabi<i class="mail fa fa-envelope"> akinlabi.olabisi@yahoo.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/bisi_akinlabi.JPG" alt="Bisi's photo"/>
         </div>
-        <div class="info">Bisi joined the lab in 2015 and she is now a Research Assistant and a PhD student. Her work focuses on Molecular identification 
-          of diarrhoeagenic <i>Escherichia coli</i> and other faecal enteric bacterial. She is particularly interested in molecular analysis, bacterial 
-          genetics, resistance patterns of enteric bacterial as well as; types and mechanisms of resistance.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/david_kwasi.jpg" alt="David's photo">
-          <div class="name">David Kwasi <i class="mail fa fa-envelope"> ajigadave@yahoo.com</i></div>
+        <div class="main">
+          <h3 class="name">Olabisi Akinlabi</h3>
+          <div>
+            <a href="mailto:akinlabi.olabisi@yahoo.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Bisi joined the lab in 2015 and she is now a Research Assistant and a PhD student. Her work focuses on Molecular identification 
+              of diarrhoeagenic <i>Escherichia coli</i> and other faecal enteric bacterial. She is particularly interested in molecular analysis, bacterial 
+              genetics, resistance patterns of enteric bacterial as well as; types and mechanisms of resistance.</p>
+          </div>
         </div>
-        <div class="info">David A Kwasi is the pioneer staff member of the Molecular Microbiology lab and has been the lab manager 
-          since March, 2015. He is a Research Fellow to Professor Iruka Okeke with the primary responsibility of coordinating effective 
-          running of the lab. David is driving and rounding off his interdisciplinary drug discovery PhD project aimed at identifying 
-          antiadhesins that could be used therapeutically in infantile diarrhoea and he is a co-investigator on the African Academy of 
-          Sciences drug discovery project in the University of Ibadan, Nigeria.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/elshama.jpg" alt="Elshama's photo">
-          <div class="name">El-shama QA Nwoko<i class="mail fa fa-envelope"> monu.nwokoeqa@gmail.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/david_kwasi.jpg" alt="David's photo"/>
         </div>
-        <div class="info">El-shama is a doctoral student who joined the lab as a masters student in 2016. Her research focuses on elucidating 
-          the pathogenesis of autoaggregation and biofilm formation of enteroaggregative <i>Escherichia coli</i> (EAEC). Autoaggregation is a  crucial 
-          step in EAEC pathogenesis. Thus, El-shama is using a high through-put method to factors and mechanisms involved in EAEC autoaggregation. 
-          El-shama is also an AMR enthusiast and an Editorial assistant with <a href="https://ajlmonline.org/index.php/ajlm" target="_blank">African Journal of Laboratory Medicine</a>.</div>  
-      </div>
-      <section id="erkison"></section>
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/erkison_photo.jpg" alt="Erkison's photo">
-          <div class="name">Erkison Odih <i class="mail fa fa-envelope"> erkisonodih@gmail.com</i></div>
+        <div class="main">
+          <h3 class="name">David Kwasi</h3>
+          <div>
+            <a href="mailto:ajigadave@yahoo.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">David A Kwasi is the pioneer staff member of the Molecular Microbiology lab and has been the lab manager 
+              since March, 2015. He is a Research Fellow to Professor Iruka Okeke with the primary responsibility of coordinating effective 
+              running of the lab. David is driving and rounding off his interdisciplinary drug discovery PhD project aimed at identifying 
+              antiadhesins that could be used therapeutically in infantile diarrhoea and he is a co-investigator on the African Academy of 
+              Sciences drug discovery project in the University of Ibadan, Nigeria.</p>
+          </div>
         </div>
-        <div class="info">Erkison is a PhD candidate at the University of Copenhagen, Copenhagen, Denmark studying antibiotic resistant <i>Acinetobacter</i> populations 
-          in the clinical and environmental settings in Nigeria using genomics. Erkison is a bioinformatician who has been part of the group since 2017, and he is 
-          responsible for server administration, pathogen genomics analyses and software design/implementation. His specific research interests are pathogen population 
-          structure and AMR in Africa. As a part-time duty, Erkison is also an Editorial Assistant with the African Journal of Laboratory Medicine, which Prof Iruka edits.</div>  
-      </div>
-      
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/faith_popoola.JPG" alt="Faith's photo">
-          <div class="name">Faith Popoola<i class="mail fa fa-envelope"> faithifep@yahoo.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/elshama.jpg" alt="Monu's photo"/>
         </div>
-        <div class="info">Faith Popoola joined the laboratory in 2018 as a Masters project student under the supervision of Prof. I.N. Okeke. 
-          Her work was on transmission of antimicrobial resistance in Enteroaggregrative <i>Escherichia coli</i> isolated from stool samples of 
-          children in Ibadan North, Oyo State. Faith is currently a research associate with the SeqAfrica genomic AMR surveillance project.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/ifeoluwa_akintayo.jpg" alt="Ife's photo">
-          <div class="name">Ifeoluwa Akintayo<i class="mail fa fa-envelope"> akintayoife94@gmail.com</i></div>
+        <div class="main">
+          <h3 class="name">El-shama QA Nwoko</h3>
+          <div>
+            <a href="mailto:monu.nwokoeqa@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">El-shama is a doctoral student who joined the lab as a masters student in 2016. Her research focuses on elucidating 
+              the pathogenesis of autoaggregation and biofilm formation of enteroaggregative <i>Escherichia coli</i> (EAEC). Autoaggregation is a  crucial 
+              step in EAEC pathogenesis. Thus, El-shama is using a high through-put method to factors and mechanisms involved in EAEC autoaggregation. 
+              El-shama is also an AMR enthusiast and an Editorial assistant with <a href="https://ajlmonline.org/index.php/ajlm" target="_blank">African Journal of Laboratory Medicine</a>.</p>
+          </div>
         </div>
-        <div class="info">Ifeoluwa Akintayo joined the lab in 2018 as a Masters project student, her work was on the bacteriological 
-          examination of household water in municipal Ibadan, Oyo state.  Ife is now a research assistant working on a project “Minimal 
-          genomics laboratory for AMR surveillance and diagnostics in provincial low-income settings” using the Oxford Nanopore whole 
-          genome sequencing platform.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/jerry.jpg" alt="Jerry's photo">
-          <div class="name">Jerry Oloche<i class="mail fa fa-envelope"> -</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/erkison_photo.jpg" alt="Erkison's photo"/>
         </div>
-        <div class="info">Jerry is a graduate of Pharmacy with a Masters degree in Pharmacology. His research focus is on discovery of antivirulence 
-          agents and elucidation of the molecular mechanism(s) by which these agents act. He joined the laboratory in 2016 and has rounded off his 
-          Ph.D research.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/jolaade_ajiboye.jpg" alt="Jolaade's photo">
-          <div class="name">Jolaade Ajiboye<i class="mail fa fa-envelope"> jolaade.janet@yahoo.com</i></div>
+        <div class="main">
+          <h3 class="name">Erkison Ewomazino Odih</h3>
+          <div>
+            <a href="mailto:erkisonodih@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="https://twitter.com/bioinfo_erkison"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="https://erkison.netlify.app"><i class="fa fa-globe fa-fw"></i></a>
+            <a href="https://gitlab.com/bioinfo_erkison"><i class="fa fa-gitlab fa-fw" style="color: #F56924;"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Erkison is a PhD candidate at the University of Copenhagen, Copenhagen, Denmark studying antibiotic resistant <i>Acinetobacter</i> populations 
+              in the clinical and environmental settings in Nigeria using genomics. Erkison is a bioinformatician who has been part of the group since 2017, and he is 
+              responsible for server administration, pathogen genomics analyses and software design/implementation. His specific research interests are pathogen population 
+              structure and AMR in Africa. As a part-time duty, Erkison is also an Technical Editor with the African Journal of Laboratory Medicine.</p>
+          </div>
         </div>
-        <div class="info">Miss Jolaade Ajiboye who holds a Masters Degree in Public Health (Health Promotion and Education) from the 
-          University of Ibadan joined the laboratory in 2018. She is the program officer for the Global Health Research Unit-Genomic 
-          Surveillance of Antimicrobial Resistance and Minimal Genomics Laboratory for AMR surveillance and diagnostic in provincial 
-          low-income settings. Her role has been to carry out administrative duties.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/mariam_odebode.jpg" alt="Mariam's photo">
-          <div class="name">Mariam Odebode<i class="mail fa fa-envelope"> mariam.a.odebode@gmail.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/faith_popoola.JPG" alt="Faith's photo"/>
         </div>
-        <div class="info">Odebode Mariam Abosede is currently undergoing an MSc programme, majoring in Pharmaceutical Microbiology at the 
-          University of Ibadan. Her research focuses on the investigation of enteropathogenic <i>Escherichia coli</i> among people living with 
-          HIV attending two health institutions in Ibadan, Oyo State, Nigeria.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/niyi_bejide.jpg" alt="Niyi's photo">
-          <div class="name">Niyi Bejide<i class="mail fa fa-envelope"> stephen_bejide@yahoo.com</i></div>
+        <div class="main">
+          <h3 class="name">Faith Oni</h3>
+          <div>
+            <a href="mailto:faithifep@yahoo.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Faith Popoola joined the laboratory in 2018 as a Masters project student under the supervision of Prof. I.N. Okeke. 
+              Her work was on transmission of antimicrobial resistance in Enteroaggregrative <i>Escherichia coli</i> isolated from stool samples of 
+              children in Ibadan North, Oyo State. Faith is currently a research associate with the SeqAfrica genomic AMR surveillance project.</p>
+          </div>
         </div>
-        <div class="info">Niyi is a doctoral candidate who joined the lab in 2017. He is keenly interested in understanding the epidemiology of 
-          enteroaggregative <i>Escherichia coli</i> strains causing diarrhoea in HIV patients. His research seeks to elucidate the factors responsible for 
-          the distribution of such pathogens, the clonal groups to which they belong as well as their antibiotic resistance profiles. Niyi is the 
-          Biological Scientist of the Severe Typhoid in Africa (SETA-Nigeria) project tasked with running the molecular operations of the project.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/nonye.jpg" alt="Nonye's photo">
-          <div class="name">Nonye Osuagwu<i class="mail fa fa-envelope"> nonyeo8@yahoo.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/jolaade_ajiboye.jpg" alt="Jolaade's photo"/>
         </div>
-        <div class="info">Nonyelum a medical scientist joined the lab in 2017, as a member of the Global Health Research Unit 
-          for Genomic Surveillance of Antimicrobial Resistance in Ibadan Nigeria. His work focuses on investigating the spread of 
-          local clones of fluoroquinolone-resistant Klebsiella and Salmonella predominant in public and private healthcare facilities 
-          across Nigeria.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/odion.jpg" alt="Odion's photo">
-          <div class="name">Odion Ikhimiukor<i class="mail fa fa-envelope"> odionikh@gmail.com</i></div>
+        <div class="main">
+          <h3 class="name">Jolaade Ajiboye</h3>
+          <div>
+            <a href="mailto:jolaade.janet@yahoo.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Jolaade Ajiboye who holds a Masters Degree in Public Health (Health Promotion and Education) from the 
+              University of Ibadan joined the laboratory in 2018. She is the program officer for the Global Health Research Unit-Genomic 
+              Surveillance of Antimicrobial Resistance and Minimal Genomics Laboratory for AMR surveillance and diagnostic in provincial 
+              low-income settings.</p>
+          </div>
         </div>
-        <div class="info">Odion is doctoral candidate of Environmental Microbiology at the University of Ibadan, Nigeria. His doctoral research investigates the roles of heavy metal pollutants in driving antimicrobial resistance (AMR) in bacterial communities in the natural environment, thus elucidating on potential environmental hotspots of AMR. He joined the lab as a Research Associate in the SEQAfrica project in March 2020.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/tomide.png" alt="Tomide's photo">
-          <div class="name">Olatomide Fagbohun<i class="mail fa fa-envelope"> olatomidefagbohun@gmail.com</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/niyi_bejide.jpg" alt="Niyi's photo"/>
         </div>
-        <div class="info">Olatomide is an M.Sc student currently being supervised by Prof. Iruka, he joined Okeke lab in 2019 and his research focuses on the determination of mechanisms of actions of selected compounds from pathogen box chemical library.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/rotimi_dada.jpeg" alt="Rotimi's photo">
-          <div class="name">Rotimi Dada<i class="mail fa fa-envelope"> dadarotimi@hotmail.com</i></div>
+        <div class="main">
+          <h3 class="name">Niyi Bejide</h3>
+          <div>
+            <a href="mailto:stephen_bejide@yahoo.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Niyi is a doctoral candidate who joined the lab in 2017. He is keenly interested in understanding the epidemiology of 
+              enteroaggregative <i>Escherichia coli</i> strains causing diarrhoea in HIV patients. His research seeks to elucidate the factors responsible for 
+              the distribution of such pathogens, the clonal groups to which they belong as well as their antibiotic resistance profiles.</p>
+          </div>
         </div>
-        <div class="info">Rotimi is currently a Ph.D. student. He came to the lab with a desire to combine wet lab microbiology with dry lab 
-          (computational genomics) microbiology. His Ph.D focusses on understanding how genes are exchanged in <i>Escherichia coli</i> and the roles of 
-          these genes in the fitness of subsets of this species to either cause disease or retain the role of a commensal in their hosts. 
-          Rotimi is equally interested in better understanding how <i>Escherichia coli</i> species (including shigellae) become greatly diverse within 
-          their species. In addition, Rotimi is also one of the bioinformaticians in the group, providing support for specific bioinformatic 
-          needs of some members of the group.</div>  
-      </div>
-      
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/shola.jpg" alt="Shola's photo">
-          <div class="name">Shola Fagbemi<i class="mail fa fa-envelope"> -</i></div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/rotimi_dada.jpeg" alt="Rotimi's photo"/>
         </div>
-        <div class="info">Fagbemi Adeshola joined the lab in 2019 as a drug discovery investigator. He's presently working towards identifying molecules that can inhibit biofilm formation of Salmonella enterica.</div>  
-      </div>
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/sunmonu.jpg" alt="Sunmonu's photo">
-          <div class="name">Sunmonu Gabriel Temitope<i class="mail fa fa-envelope">toppytee4real56@gmail.com</i></div>
+        <div class="main">
+          <h3 class="name">Rotimi Dada</h3>
+          <div>
+            <a href="mailto:dadarotimi@hotmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Rotimi is currently a Ph.D. student. He came to the lab with a desire to combine wet lab microbiology with dry lab 
+              (computational genomics) microbiology. His Ph.D focusses on understanding how genes are exchanged in <i>Escherichia coli</i> and the roles of 
+              these genes in the fitness of subsets of this species to either cause disease or retain the role of a commensal in their hosts. 
+              Rotimi is equally interested in better understanding how <i>Escherichia coli</i> species (including shigellae) become greatly diverse within 
+              their species. In addition, Rotimi is also one of the bioinformaticians in the group, providing support for specific bioinformatic 
+              needs of some members of the group.</p>
+          </div>
         </div>
-        <div class="info">I am currently a Master's student of Pharmaceutical Microbiology at the University of Ibadan. I joined Okeke lab in 2019. 
-          My research focuses on the genomic relatedness of antimicrobial resistant <i>E. coli</i> isolated from chicken meat and human clinical samples.</div>  
-      </div>
-      <div id="one-member" class="other">
-        <div class="person">
-          <img class="profile-photo" src="images/timilehin_adeogun.PNG" alt="Timilehin's photo">
-          <div class="name">Timilehin Adeogun<i class="mail fa fa-envelope"> -</i></div>
-        </div>
-        <div class="info">Timilehin is currently an Msc student studying pharmaceutical Microbiology at University of Ibadan. He joined the lab in 2019 and he is currently researching the molecular epidemiology of agglutinins in <i>Escherichia coli</i> from cases of diarrhea in Children (0-5 years) at the University College Hospital (UCH), Ibadan.</div>  
-      </div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+
             
-    </div>
   </section>
 
-  <br>
-	<div id="footer">
-		<div>
-			<p>
-				<span>Website created by <a href="#erkison">Erkison</a> | 2020 &copy; OkekeLab. </span>
-			</p>
-			<ul>
-				<li id="facebook">
-					<a href="#">facebook</a>
-				</li>
-				<li id="twitter">
-					<a href="#">twitter</a>
-				</li>
-			</ul>
+  <section id="alumni">
+    <br><br>
+    <h2 class="my-3 text-center">Alumni</h2>  
+
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/ayorinde_afolayan.jpg" alt="Ayo's photo"/>
+        </div>
+        <div class="main">
+          <h3 class="name">Ayorinde Afolayan</h3>
+          <div>
+            <a href="mailto:afolayanayorinde@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="https://orcid.org/0000-0003-1405-2365"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Ayorinde Afolayan holds a doctorate in Pharmaceutical Microbiology (microbial genetics) and joined the lab in 2018 as a 
+              Research Associate for the Nigerian node of the GHRU-GSAR (Global Health Research Unit for the genomic surveillance of antimicrobial 
+              resistance) project. Before he left, he was a post-doctoral scientist on the aforementioned project and was tasked with the in silico analysis 
+              and interpretation of sequence data derived from WHO-high priority pathogens, for the active surveillance of antimicrobial resistance in 
+              Nigeria. He is particularly interested in microbiome studies, bacterial genomics, and antimicrobial resistance.</p>
+          </div>
+        </div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/ifeoluwa_akintayo.jpg" alt="Ife's photo"/>
+        </div>
+        <div class="main">
+          <h3 class="name">Ifeoluwa Akintayo</h3>
+          <div>
+            <a href="mailto:akintayoife94@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">Ifeoluwa Akintayo joined the lab in 2018 as a Masters project student, her work was on the bacteriological 
+              examination of household water in municipal Ibadan, Oyo state.  Ife was also a research associate on the “Minimal 
+              genomics laboratory for AMR surveillance and diagnostics in provincial low-income settings” project – a pilot of the Oxford Nanopore whole 
+              genome sequencing platform in a low-resource setting.</p>
+          </div>
+        </div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+    <div class="container my-4">
+      <div class="card text-center p-3 border-0">
+        <div class="m-3 m-auto">
+          <img class="rounded-circle shadow-lg" style="max-width: 100%; height: 300px;" src="images/odion.jpg" alt="Odion's photo"/>
+        </div>
+        <div class="main">
+          <h3 class="name">Odion Ikhimiukor</h3>
+          <div>
+            <a href="mailto:odionikh@gmail.com"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="#"><i class="fa fa-info fa-fw"></i></a>
+          </div>
+          <div class="m-2 p-3">
+            <p class="text-center">During his time with the lab, Odion was a doctoral candidate of Environmental Microbiology at the University of Ibadan, Nigeria. His doctoral research investigated the roles of heavy metal pollutants in driving antimicrobial resistance (AMR) in bacterial communities in the natural environment, thus elucidating on potential environmental hotspots of AMR. He joined the lab as a Research Associate in the SEQAfrica project in March 2020.</p>
+          </div>
+        </div>
+      </div> <!-- end card -->
+    </div> <!-- end card-container -->
+
+  </section>
+
+  <br><br>
+	<footer class="footer mt-auto py-2 text-center">
+		<div class="container-fluid m-auto">
+			<span class="text-muted">Website created by <a href="https://erkison.netlify.app" target="_blank">Erkison</a> | 2022 &copy; OkekeLab. </span>
 		</div>
-	</div>
+	</footer>
 	
 	<script type="text/javascript" src="jsfile.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
